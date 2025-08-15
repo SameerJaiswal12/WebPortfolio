@@ -1,0 +1,89 @@
+@page
+@model ProjectsModel
+@{
+    ViewData["Title"] = "Projects";
+}
+
+<!-- Page Header -->
+<section class="page-header py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center" data-aos="fade-up">
+                <h1 class="display-3 fw-bold text-white mb-3">My Projects</h1>
+                <p class="lead text-muted">Explore my game development portfolio and creative work</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Grid -->
+<section class="projects-grid py-5">
+    <div class="container">
+        <div class="row g-4">
+            @foreach (var project in Model.Projects)
+            {
+                <div class="col-lg-6 col-xl-4" data-aos="fade-up" data-aos-delay="@(100 * (Model.Projects.IndexOf(project) + 1))">
+                    <div class="project-card h-100">
+                        <div class="project-image-wrapper position-relative overflow-hidden">
+                            @if (!string.IsNullOrEmpty(project.HeroVideoPath))
+                            {
+                                <video class="project-video" autoplay muted loop playsinline>
+                                    <source src="@project.HeroVideoPath" type="video/mp4">
+                                </video>
+                            }
+                            else
+                            {
+                                <img src="@(project.GalleryImagePaths.FirstOrDefault() ?? "/images/placeholder.jpg")" 
+                                     alt="@project.Title" class="project-image">
+                            }
+                            <div class="project-overlay d-flex align-items-center justify-content-center">
+                                <a href="/Project/@project.Slug" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-eye me-2"></i>Read More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content p-4">
+                            <h3 class="project-title h4 fw-bold text-white mb-2">@project.Title</h3>
+                            <p class="project-tagline text-muted mb-3">@project.Tagline</p>
+                            <div class="project-technologies mb-3">
+                                @foreach (var tech in project.Technologies.Take(4))
+                                {
+                                    <span class="badge bg-secondary me-1 mb-1">@tech</span>
+                                }
+                                @if (project.Technologies.Count > 4)
+                                {
+                                    <span class="badge bg-secondary">+@(project.Technologies.Count - 4) more</span>
+                                }
+                            </div>
+                            <div class="project-meta text-muted small">
+                                <i class="fas fa-calendar me-1"></i>
+                                @project.CreatedDate.ToString("MMM yyyy")
+                                @if (project.IsFeatured)
+                                {
+                                    <span class="badge bg-warning text-dark ms-2">
+                                        <i class="fas fa-star me-1"></i>Featured
+                                    </span>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section py-5 bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center" data-aos="fade-up">
+                <h2 class="h3 text-white mb-3">Ready to Start Your Project?</h2>
+                <p class="text-muted mb-4">Let's discuss how we can bring your game ideas to life</p>
+                <a href="/Contact" class="btn btn-primary btn-lg">
+                    <i class="fas fa-paper-plane me-2"></i>Get In Touch
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\README.md",
+      "PackagePath": "staticwebassets\\images\\README.md"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\hero-background.jpg",
+      "PackagePath": "staticwebassets\\images\\hero-background.jpg"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\profile.jpg",
+      "PackagePath": "staticwebassets\\images\\profile.jpg"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\videos\\README.md",
+      "PackagePath": "staticwebassets\\videos\\README.md"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GameDevPortfolio.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.GameDevPortfolio.props",
+      "PackagePath": "build\\GameDevPortfolio.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.GameDevPortfolio.props",
+      "PackagePath": "buildMultiTargeting\\GameDevPortfolio.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.GameDevPortfolio.props",
+      "PackagePath": "buildTransitive\\GameDevPortfolio.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

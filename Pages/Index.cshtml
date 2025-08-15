@@ -1,0 +1,213 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- Hero Section -->
+<section class="hero-section position-relative vh-100 d-flex align-items-center justify-content-center overflow-hidden">
+    <!-- Background Image/Video -->
+    <div class="hero-background">
+        <!-- You can replace this with your own background image -->
+        <img src="/images/hero-background.jpg" alt="Game Development Background" class="hero-bg-image">
+        <!-- Or keep the video if you prefer -->
+        <!-- <video class="hero-video" autoplay muted loop playsinline>
+            <source src="/videos/hero-background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> -->
+    </div>
+    
+    <!-- Background Overlay -->
+    <div class="hero-overlay"></div>
+    
+    <!-- Hero Content -->
+    <div class="container text-center text-white position-relative z-index-2">
+        <div class="row justify-content-center">
+            <div class="col-lg-8" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="hero-title display-1 fw-bold mb-4" data-aos="fade-up" data-aos-delay="200">
+                    Sameer Jaiswal
+                </h1>
+                <h2 class="hero-subtitle display-5 fw-bold mb-4" data-aos="fade-up" data-aos-delay="400">
+                    Game Designer & Developer
+                </h2>
+                <p class="hero-description lead mb-5" data-aos="fade-up" data-aos-delay="600">
+                    Crafting immersive game worlds with Unity, Maya, and Substance Painter. 
+                    From concept to completion, I bring your game ideas to life with passion and precision.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary btn-lg me-3 mb-2">
+                        <i class="fas fa-rocket me-2"></i>View Projects
+                    </a>
+                    <a href="/About" class="btn btn-outline-light btn-lg mb-2">
+                        <i class="fas fa-user me-2"></i>About Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator position-absolute bottom-0 start-50 translate-middle-x mb-4">
+        <a href="#projects" class="text-white text-decoration-none">
+            <i class="fas fa-chevron-down fa-2x animate-bounce"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Featured Projects Section -->
+<section id="projects" class="featured-projects py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title display-4 fw-bold text-white mb-3">Featured Projects</h2>
+                <p class="section-subtitle lead text-muted">Explore some of my latest game development work</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            @foreach (var project in Model.FeaturedProjects)
+            {
+                <div class="col-lg-6 col-xl-4" data-aos="fade-up" data-aos-delay="@(100 * (Model.FeaturedProjects.IndexOf(project) + 1))">
+                    <div class="project-card h-100">
+                        <div class="project-image-wrapper position-relative overflow-hidden">
+                            @if (!string.IsNullOrEmpty(project.HeroVideoPath))
+                            {
+                                <video class="project-video" autoplay muted loop playsinline>
+                                    <source src="@project.HeroVideoPath" type="video/mp4">
+                                </video>
+                            }
+                            else
+                            {
+                                <img src="@(project.GalleryImagePaths.FirstOrDefault() ?? "/images/placeholder.jpg")" 
+                                     alt="@project.Title" class="project-image">
+                            }
+                            <div class="project-overlay d-flex align-items-center justify-content-center">
+                                <a href="/Project/@project.Slug" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-eye me-2"></i>View Project
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content p-4">
+                            <h3 class="project-title h4 fw-bold text-white mb-2">@project.Title</h3>
+                            <p class="project-tagline text-muted mb-3">@project.Tagline</p>
+                            <div class="project-technologies">
+                                @foreach (var tech in project.Technologies.Take(3))
+                                {
+                                    <span class="badge bg-secondary me-1">@tech</span>
+                                }
+                                @if (project.Technologies.Count > 3)
+                                {
+                                    <span class="badge bg-secondary">+@(project.Technologies.Count - 3) more</span>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col-12 text-center" data-aos="fade-up">
+                <a href="/Projects" class="btn btn-outline-primary btn-lg">
+                    <i class="fas fa-th-large me-2"></i>View All Projects
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Preview Section -->
+<section class="skills-preview py-5 bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title display-5 fw-bold text-white mb-3">What I Do</h2>
+                <p class="section-subtitle lead text-muted">Full-stack game development from concept to launch</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-card text-center p-4 h-100">
+                    <div class="skill-icon mb-3">
+                        <i class="fas fa-code fa-3x text-primary"></i>
+                    </div>
+                    <h3 class="h5 text-white mb-3">Game Programming</h3>
+                    <p class="text-muted">C#, C++, Unity, Unreal Engine, gameplay systems, AI, physics, and optimization.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-card text-center p-4 h-100">
+                    <div class="skill-icon mb-3">
+                        <i class="fas fa-cube fa-3x text-primary"></i>
+                    </div>
+                    <h3 class="h5 text-white mb-3">3D Art & Design</h3>
+                    <p class="text-muted">Modeling, texturing, animation, environment design, and visual effects creation.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill-card text-center p-4 h-100">
+                    <div class="skill-icon mb-3">
+                        <i class="fas fa-gamepad fa-3x text-primary"></i>
+                    </div>
+                    <h3 class="h5 text-white mb-3">Game Design</h3>
+                    <p class="text-muted">Level design, mechanics, storytelling, user experience, and game balance.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // GSAP animations for hero section
+        gsap.from('.hero-title', {
+            duration: 1.5,
+            y: 100,
+            opacity: 0,
+            ease: 'power3.out',
+            delay: 0.5
+        });
+        
+        gsap.from('.hero-subtitle', {
+            duration: 1.5,
+            y: 50,
+            opacity: 0,
+            ease: 'power3.out',
+            delay: 1
+        });
+        
+        gsap.from('.hero-buttons', {
+            duration: 1,
+            y: 30,
+            opacity: 0,
+            ease: 'power3.out',
+            delay: 1.5
+        });
+    </script>
+}
+
+
