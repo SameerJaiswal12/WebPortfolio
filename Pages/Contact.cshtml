@@ -10,7 +10,6 @@
         <div class="row">
             <div class="col-12 text-center" data-aos="fade-up">
                 <h1 class="display-3 fw-bold mb-3">Get In Touch</h1>
-                <p class="lead text-muted">Ready to start your next game project? Let's talk!</p>
             </div>
         </div>
     </div>
@@ -19,99 +18,32 @@
 <!-- Contact Section -->
 <section class="contact-section py-5">
     <div class="container">
-        <div class="row">
-            <!-- Contact Form -->
-            <div class="col-lg-8 mb-5 mb-lg-0" data-aos="fade-right">
-                <div class="contact-form-wrapper">
-                    <h2 class="h2 fw-bold text-white mb-4">Send Me a Message</h2>
-                    
-                    @if (Model.MessageSent)
-                    {
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                            <i class="fas fa-check-circle me-2"></i>
-                            Thank you for your message! I'll get back to you soon.
-                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                        </div>
-                    }
-                    
-                    <form method="post" class="contact-form">
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label for="Name" class="form-label text-white">Name *</label>
-                                <input type="text" class="form-control @(Model.ModelState["Name"]?.Errors.Any() == true ? "is-invalid" : "")" 
-                                       id="Name" name="ContactForm.Name" value="@Model.ContactForm?.Name" required>
-                                @if (Model.ModelState["Name"]?.Errors.Any() == true)
-                                {
-                                    <div class="invalid-feedback">
-                                        @Model.ModelState["Name"].Errors.First().ErrorMessage
-                                    </div>
-                                }
-                            </div>
-                            
-                            <div class="col-md-6 mb-3">
-                                <label for="Email" class="form-label text-white">Email *</label>
-                                <input type="email" class="form-control @(Model.ModelState["Email"]?.Errors.Any() == true ? "is-invalid" : "")" 
-                                       id="Email" name="ContactForm.Email" value="@Model.ContactForm?.Email" required>
-                                @if (Model.ModelState["Email"]?.Errors.Any() == true)
-                                {
-                                    <div class="invalid-feedback">
-                                        @Model.ModelState["Email"].Errors.First().ErrorMessage
-                                    </div>
-                                }
-                            </div>
-                        </div>
-                        
-                        <div class="mb-4">
-                            <label for="Message" class="form-label text-white">Message *</label>
-                            <textarea class="form-control @(Model.ModelState["Message"]?.Errors.Any() == true ? "is-invalid" : "")" 
-                                      id="Message" name="ContactForm.Message" rows="6" required>@Model.ContactForm?.Message</textarea>
-                            @if (Model.ModelState["Message"]?.Errors.Any() == true)
-                            {
-                                <div class="invalid-feedback">
-                                    @Model.ModelState["Message"].Errors.First().ErrorMessage
-                                </div>
-                            }
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-lg">
-                            <i class="fas fa-paper-plane me-2"></i>Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
-            
+        <div class="row justify-content-center">
             <!-- Contact Information -->
-            <div class="col-lg-4" data-aos="fade-left">
-                <div class="contact-info">
-                    <h2 class="h2 fw-bold text-white mb-4">Contact Information</h2>
-                    
-                    <div class="contact-item mb-4">
-                        <div class="contact-icon mb-2">
-                            <i class="fas fa-envelope fa-2x text-primary"></i>
+            <div class="col-lg-8" data-aos="fade-up">
+                <div class="contact-info p-4 rounded bg-dark border border-secondary">
+                    <h2 class="h2 fw-bold text-white mb-4 text-center">Contact Information</h2>
+
+                    <!-- Email -->
+                    <div class="contact-item mb-4 d-flex align-items-center">
+                        <i class="fas fa-envelope fa-2x text-primary me-3"></i>
+                        <div class="contact-text flex-grow-1">
+                            <h3 class="h6 fw-bold text-white mb-1">Email</h3>
+                            <p class="text-muted mb-0">sameerjaiswal1203@gmail.com</p>
                         </div>
-                        <h3 class="h6 fw-bold text-white mb-2">Email</h3>
-                        <p class="text-muted mb-0">sameerjaiswal1203@gmail.com</p>
-                        <a href="mailto:sameerjaiswal1203@gmail.com" class="btn btn-outline-primary btn-sm mt-2">
+                        <a href="mailto:sameerjaiswal1203@gmail.com" class="btn btn-outline-primary btn-sm">
                             <i class="fas fa-envelope me-1"></i>Send Email
                         </a>
                     </div>
-                    
-                    <div class="contact-item mb-4">
-                        <div class="contact-icon mb-2">
-                            <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+
+                    <!-- Location -->
+                    <div class="contact-item d-flex align-items-center">
+                        <i class="fas fa-map-marker-alt fa-2x text-primary me-3"></i>
+                        <div class="contact-text">
+                            <h3 class="h6 fw-bold text-white mb-1">Location</h3>
+                            <p class="text-muted mb-1">Remote / Worldwide</p>
+                            <p class="text-muted small mb-0">Available for freelance & collaboration</p>
                         </div>
-                        <h3 class="h6 fw-bold text-white mb-2">Location</h3>
-                        <p class="text-muted mb-0">Remote / Worldwide</p>
-                        <p class="text-muted small">Available for remote collaboration and freelance work</p>
-                    </div>
-                    
-                    <div class="contact-item mb-4">
-                        <div class="contact-icon mb-2">
-                            <i class="fas fa-clock fa-2x text-primary"></i>
-                        </div>
-                        <h3 class="h6 fw-bold text-white mb-2">Response Time</h3>
-                        <p class="text-muted mb-0">Within 24 hours</p>
-                        <p class="text-muted small">I typically respond to all inquiries within one business day</p>
                     </div>
                 </div>
             </div>
@@ -125,7 +57,6 @@
         <div class="row">
             <div class="col-12 text-center mb-5" data-aos="fade-up">
                 <h2 class="display-5 fw-bold text-white mb-3">Connect With Me</h2>
-                <p class="lead text-muted">Follow my journey and stay updated with my latest projects</p>
             </div>
         </div>
         
@@ -133,36 +64,33 @@
             <div class="col-lg-8">
                 <div class="row g-4">
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-card text-decoration-none">
+                        <a href="https://www.linkedin.com/in/sameer-jaiswal-66900037a" target="_blank" class="social-card text-decoration-none">
                             <div class="card bg-dark border-primary h-100 text-center">
                                 <div class="card-body p-4">
                                     <i class="fab fa-linkedin fa-3x text-primary mb-3"></i>
                                     <h3 class="h5 fw-bold text-white mb-2">LinkedIn</h3>
-                                    <p class="text-muted mb-0">Professional network and updates</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                        <a href="https://instagram.com/yourprofile" target="_blank" class="social-card text-decoration-none">
+                        <a href="https://www.instagram.com/sam._.sj_?igsh=Z2VyNHRjamgyd2w2" target="_blank" class="social-card text-decoration-none">
                             <div class="card bg-dark border-danger h-100 text-center">
                                 <div class="card-body p-4">
                                     <i class="fab fa-instagram fa-3x text-danger mb-3"></i>
                                     <h3 class="h5 fw-bold text-white mb-2">Instagram</h3>
-                                    <p class="text-muted mb-0">Behind-the-scenes and artwork</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                        <a href="https://github.com/yourprofile" target="_blank" class="social-card text-decoration-none">
+                        <a href="https://github.com/SameerJaiswal12" target="_blank" class="social-card text-decoration-none">
                             <div class="card bg-dark border-secondary h-100 text-center">
                                 <div class="card-body p-4">
                                     <i class="fab fa-github fa-3x text-secondary mb-3"></i>
                                     <h3 class="h5 fw-bold text-white mb-2">GitHub</h3>
-                                    <p class="text-muted mb-0">Open source and code samples</p>
                                 </div>
                             </div>
                         </a>
@@ -170,20 +98,6 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- FAQ Section -->
-<section class="faq-section py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center mb-5" data-aos="fade-up">
-                <h2 class="display-5 fw-bold text-white mb-3">Frequently Asked Questions</h2>
-                <p class="lead text-muted">Common questions about working with me</p>
-            </div>
-        </div>
-        
-
     </div>
 </section>
 
@@ -195,29 +109,7 @@
             once: true,
             offset: 100
         });
-        
-        // Form validation feedback
-        const form = document.querySelector('.contact-form');
-        if (form) {
-            form.addEventListener('submit', function(e) {
-                const requiredFields = form.querySelectorAll('[required]');
-                let isValid = true;
-                
-                requiredFields.forEach(field => {
-                    if (!field.value.trim()) {
-                        field.classList.add('is-invalid');
-                        isValid = false;
-                    } else {
-                        field.classList.remove('is-invalid');
-                    }
-                });
-                
-                if (!isValid) {
-                    e.preventDefault();
-                }
-            });
-        }
-        
+
         // Social card hover effects
         document.querySelectorAll('.social-card').forEach(card => {
             card.addEventListener('mouseenter', function() {
@@ -230,6 +122,3 @@
         });
     </script>
 }
-
-
-

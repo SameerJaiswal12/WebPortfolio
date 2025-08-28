@@ -1,32 +1,38 @@
-# Images Directory
-
-Place your portfolio images in this directory:
+# Image Assets for GameDev Portfolio
 
 ## Required Images
 
-### Profile Image
-- `profile.jpg` - Your professional headshot (recommended: 400x400px)
+### Profile & Hero
+- `profile.jpg` - Your profile picture (400x400px recommended)
+- `hero-background.jpg` - Hero section background (1920x1080px recommended)
 
-### Project Images
-- `cyberpunk-1.jpg` through `cyberpunk-4.jpg` - Cyberpunk Adventure project screenshots
-- `space-1.jpg` through `space-3.jpg` - Space Exploration project screenshots  
-- `medieval-1.jpg` through `medieval-5.jpg` - Medieval Fantasy project screenshots
-- `racing-1.jpg` through `racing-3.jpg` - Racing Simulator project screenshots
+### Project Thumbnails (First image from each project's gallery)
+- `haunt-inn-1.jpg` - Haunt-Inn project thumbnail
+- `clash-zone-1.jpg` - Clash Zone project thumbnail  
+- `claras-journey-1.jpg` - Clara's Journey project thumbnail
+- `crater-shooter-1.jpg` - Crater Shooter project thumbnail
+- `neon-ball-1.jpg` - Neon Ball project thumbnail
 
-### Placeholder
-- `placeholder.jpg` - Default image for projects without specific images
+### Bonus Content
+- `bonus-thumbnail.jpg` - Bonus Content box thumbnail (400x300px recommended)
 
-## Image Specifications
+### Bonus Content Gallery Images
+- `bonus/maya-workflow.jpg` - Maya 3D modeling workflow
+- `bonus/substance-painter.jpg` - Substance Painter texturing
+- `bonus/unity-editor.jpg` - Unity editor workflow
+- `bonus/rigging-process.jpg` - Character rigging process
+- `bonus/animation-timeline.jpg` - Animation timeline work
+- `bonus/code-snippet.jpg` - C# code snippet
+- `bonus/ui-design.jpg` - UI/UX design work
+- `bonus/sound-design.jpg` - Sound design work
+- `bonus/lighting-setup.jpg` - Lighting and post-processing
+
+## Image Guidelines
 - **Format**: JPG or PNG
-- **Resolution**: Minimum 1200x800px for project images
-- **File Size**: Optimize for web (under 500KB per image)
-- **Aspect Ratio**: 16:9 or 4:3 recommended for project screenshots
-
-## Tips
-- Use descriptive filenames
-- Optimize images for web performance
-- Maintain consistent aspect ratios
-- Include both gameplay and artwork shots
+- **Size**: Keep under 2MB per image for fast loading
+- **Quality**: High quality, clear images
+- **Aspect Ratio**: Maintain consistent ratios for similar content types
+- **Thumbnails**: Square or 4:3 ratio recommended for project cards
 
 
 

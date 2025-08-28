@@ -1,0 +1,72 @@
+@page
+@{
+    ViewData["Title"] = "Bonus Content";
+}
+
+<!-- Page Header -->
+<section class="page-header py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center" data-aos="fade-up">
+                <h1 class="display-3 fw-bold text-white mb-3">Bonus Content</h1>
+                <p class="lead text-muted">Extra screenshots and videos from my work. Add as many as you want!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bonus Content Grid -->
+<section class="bonus-content-grid py-5">
+    <div class="container">
+        <div class="row g-4">
+            @for (int i = 1; i <= 30; i++)
+            {
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="@(i * 100)">
+                    <div class="bonus-item h-100">
+                        <div class="bonus-image-wrapper position-relative overflow-hidden rounded">
+                            <img src="@($"/images/bonus/bonus-content-{i}.jpg")" alt="Bonus Content @i" class="bonus-image w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+            }
+            @{
+    // Example YouTube embed links (replace with your own!)
+
+    var bonusYouTubeVideos = new List<string>
+    {
+        "https://www.youtube.com/embed/RqEXyargJts?si=23fJ0BN4Do7969Ub",
+        "https://www.youtube.com/embed/qqP4UCuOdSo?si=vXXUO207m8K63Bq8"
+    };
+}
+
+@for (int i = 0; i < bonusYouTubeVideos.Count; i++)
+{
+    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="@(i * 100 + 300)">
+        <div class="bonus-item h-100">
+            <div class="bonus-image-wrapper position-relative overflow-hidden rounded">
+                <iframe 
+                    class="bonus-image w-100 h-100 object-fit-cover"
+                    src="@bonusYouTubeVideos[i]" 
+                    title="Bonus Video @i"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+}
+
+            <!-- Add more placeholders as needed -->
+        </div>
+    </div>
+</section>
+
+<!-- Back to Projects Button -->
+<section class="back-to-projects py-4">
+    <div class="container text-center">
+        <a href="/Projects" class="btn btn-outline-primary btn-lg">
+            <i class="fas fa-arrow-left me-2"></i>Back to Projects
+        </a>
+    </div>
+</section>

@@ -8,44 +8,33 @@
 <section class="hero-section position-relative vh-100 d-flex align-items-center justify-content-center overflow-hidden">
     <!-- Background Image/Video -->
     <div class="hero-background">
-        <!-- You can replace this with your own background image -->
         <img src="/images/hero-background.jpg" alt="Game Development Background" class="hero-bg-image">
-        <!-- Or keep the video if you prefer -->
-        <!-- <video class="hero-video" autoplay muted loop playsinline>
-            <source src="/videos/hero-background.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video> -->
     </div>
-    
     <!-- Background Overlay -->
     <div class="hero-overlay"></div>
-    
     <!-- Hero Content -->
     <div class="container text-center text-white position-relative z-index-2">
         <div class="row justify-content-center">
             <div class="col-lg-8" data-aos="fade-up" data-aos-duration="1000">
-                <h1 class="hero-title display-1 fw-bold mb-4" data-aos="fade-up" data-aos-delay="200">
+                <h1 class="hero-title display-1 fw-bold mb-4">
                     Sameer Jaiswal
                 </h1>
-                <h2 class="hero-subtitle display-5 fw-bold mb-4" data-aos="fade-up" data-aos-delay="400">
-                    Game Designer & Developer
+                <h2 class="hero-subtitle display-5 fw-bold mb-4" >
+                    Game Designer/Developer <br> & AI Enthusiast
                 </h2>
                 <p class="hero-description lead mb-5" data-aos="fade-up" data-aos-delay="600">
-                    Crafting immersive game worlds with Unity, Maya, and Substance Painter. 
-                    From concept to completion, I bring your game ideas to life with passion and precision.
-                </p>
+                    Dedicated to building games that engage and inspire players, while harnessing AI to push the boundaries of game design and development.
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary btn-lg me-3 mb-2">
                         <i class="fas fa-rocket me-2"></i>View Projects
                     </a>
                     <a href="/About" class="btn btn-outline-light btn-lg mb-2">
-                        <i class="fas fa-user me-2"></i>About Me
+                        <i class="fas fa-user me-2"></i>About Me           
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    
     <!-- Scroll Indicator -->
     <div class="scroll-indicator position-absolute bottom-0 start-50 translate-middle-x mb-4">
         <a href="#projects" class="text-white text-decoration-none">
@@ -70,17 +59,8 @@
                 <div class="col-lg-6 col-xl-4" data-aos="fade-up" data-aos-delay="@(100 * (Model.FeaturedProjects.IndexOf(project) + 1))">
                     <div class="project-card h-100">
                         <div class="project-image-wrapper position-relative overflow-hidden">
-                            @if (!string.IsNullOrEmpty(project.HeroVideoPath))
-                            {
-                                <video class="project-video" autoplay muted loop playsinline>
-                                    <source src="@project.HeroVideoPath" type="video/mp4">
-                                </video>
-                            }
-                            else
-                            {
-                                <img src="@(project.GalleryImagePaths.FirstOrDefault() ?? "/images/placeholder.jpg")" 
-                                     alt="@project.Title" class="project-image">
-                            }
+                            <img src="@(project.GalleryImagePaths.FirstOrDefault() ?? "/images/placeholder.jpg")" 
+                                 alt="@project.Title" class="project-image">
                             <div class="project-overlay d-flex align-items-center justify-content-center">
                                 <a href="/Project/@project.Slug" class="btn btn-primary btn-lg">
                                     <i class="fas fa-eye me-2"></i>View Project

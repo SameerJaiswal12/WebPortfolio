@@ -249,3 +249,4 @@ D:\Website Portfolio\obj\Debug\net8.0\refint\GameDevPortfolio.dll
 D:\Website Portfolio\obj\Debug\net8.0\GameDevPortfolio.pdb
 D:\Website Portfolio\obj\Debug\net8.0\GameDevPortfolio.genruntimeconfig.cache
 D:\Website Portfolio\obj\Debug\net8.0\ref\GameDevPortfolio.dll
+D:\Website Portfolio\obj\Debug\net8.0\GameDevPortfolio.sourcelink.json

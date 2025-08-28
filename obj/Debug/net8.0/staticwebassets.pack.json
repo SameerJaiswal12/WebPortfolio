@@ -5,12 +5,168 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "D:\\Website Portfolio\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
       "Id": "D:\\Website Portfolio\\wwwroot\\images\\README.md",
       "PackagePath": "staticwebassets\\images\\README.md"
     },
     {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-1.jpg",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-1.jpg"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-10.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-10.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-11.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-11.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-12.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-12.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-13.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-13.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-14.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-14.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-15.jpg",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-15.jpg"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-16.jpg",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-16.jpg"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-17.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-17.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-18.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-18.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-19.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-19.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-2.jpg",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-2.jpg"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-20.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-20.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-21.jpg",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-21.jpg"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-22.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-22.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-23.jpg",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-23.jpg"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-24.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-24.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-25.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-25.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-26.jpg",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-26.jpg"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-27.jpg",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-27.jpg"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-28.jpg",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-28.jpg"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-29.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-29.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-3.jpg",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-3.jpg"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-30.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-30.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-4.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-4.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-5.jpg",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-5.jpg"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-6.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-6.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-7.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-7.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-8.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-8.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-9.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-9.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-thumb-1.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-thumb-1.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-content-thumb-2.JPG",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-content-thumb-2.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\bonus\\bonus-thumbnail.jpg",
+      "PackagePath": "staticwebassets\\images\\bonus\\bonus-thumbnail.jpg"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\claras-journey-1.JPG",
+      "PackagePath": "staticwebassets\\images\\claras-journey-1.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\clash-zone-1.JPG",
+      "PackagePath": "staticwebassets\\images\\clash-zone-1.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\crater-shooter-1.JPG",
+      "PackagePath": "staticwebassets\\images\\crater-shooter-1.JPG"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\haunt-inn-1.JPG",
+      "PackagePath": "staticwebassets\\images\\haunt-inn-1.JPG"
+    },
+    {
       "Id": "D:\\Website Portfolio\\wwwroot\\images\\hero-background.jpg",
       "PackagePath": "staticwebassets\\images\\hero-background.jpg"
+    },
+    {
+      "Id": "D:\\Website Portfolio\\wwwroot\\images\\neon-ball-1.JPG",
+      "PackagePath": "staticwebassets\\images\\neon-ball-1.JPG"
     },
     {
       "Id": "D:\\Website Portfolio\\wwwroot\\images\\profile.jpg",
@@ -19,10 +175,6 @@
     {
       "Id": "D:\\Website Portfolio\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
-    },
-    {
-      "Id": "D:\\Website Portfolio\\wwwroot\\videos\\README.md",
-      "PackagePath": "staticwebassets\\videos\\README.md"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GameDevPortfolio.Microsoft.AspNetCore.StaticWebAssets.props",

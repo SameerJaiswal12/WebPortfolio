@@ -25,17 +25,8 @@
                 <div class="col-lg-6 col-xl-4" data-aos="fade-up" data-aos-delay="@(100 * (Model.Projects.IndexOf(project) + 1))">
                     <div class="project-card h-100">
                         <div class="project-image-wrapper position-relative overflow-hidden">
-                            @if (!string.IsNullOrEmpty(project.HeroVideoPath))
-                            {
-                                <video class="project-video" autoplay muted loop playsinline>
-                                    <source src="@project.HeroVideoPath" type="video/mp4">
-                                </video>
-                            }
-                            else
-                            {
-                                <img src="@(project.GalleryImagePaths.FirstOrDefault() ?? "/images/placeholder.jpg")" 
-                                     alt="@project.Title" class="project-image">
-                            }
+                            <img src="@(project.GalleryImagePaths.FirstOrDefault() ?? "/images/placeholder.jpg")" 
+                                 alt="@project.Title" class="project-image">
                             <div class="project-overlay d-flex align-items-center justify-content-center">
                                 <a href="/Project/@project.Slug" class="btn btn-primary btn-lg">
                                     <i class="fas fa-eye me-2"></i>Read More
@@ -56,11 +47,9 @@
                                 }
                             </div>
                             <div class="project-meta text-muted small">
-                                <i class="fas fa-calendar me-1"></i>
-                                @project.CreatedDate.ToString("MMM yyyy")
                                 @if (project.IsFeatured)
                                 {
-                                    <span class="badge bg-warning text-dark ms-2">
+                                    <span class="badge bg-warning text-dark">
                                         <i class="fas fa-star me-1"></i>Featured
                                     </span>
                                 }
@@ -69,6 +58,35 @@
                     </div>
                 </div>
             }
+            
+            <!-- Bonus Content Box (6th Project Box) -->
+            <div class="col-lg-6 col-xl-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="project-card h-100">
+                    <div class="project-image-wrapper position-relative overflow-hidden">
+                        <img src="/images/bonus/bonus-thumbnail.jpg" alt="Bonus Content" class="project-image">
+                        <div class="project-overlay d-flex align-items-center justify-content-center">
+                            <a href="/BonusContent" class="btn btn-primary btn-lg">
+                                <i class="fas fa-images me-2"></i>View Content
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content p-4">
+                        <h3 class="project-title h4 fw-bold text-white mb-2">Bonus Content</h3>
+                        <p class="project-tagline text-muted mb-3">Extra work screenshots and behind-the-scenes content</p>
+                        <div class="project-technologies mb-3">
+                            <span class="badge bg-secondary me-1 mb-1">Maya</span>
+                            <span class="badge bg-secondary me-1 mb-1">Substance</span>
+                            <span class="badge bg-secondary me-1 mb-1">Unity</span>
+                            <span class="badge bg-secondary">Photoshop</span>
+                        </div>
+                        <div class="project-meta text-muted small">
+                            <span class="badge bg-info">
+                                <i class="fas fa-plus me-1"></i>Extra Work
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
