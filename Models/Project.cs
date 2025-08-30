@@ -18,7 +18,7 @@ public class Project
     [Required]
     public string Overview { get; set; } = string.Empty;
     
-    public string GitHubUrl { get; set; }
+    public string? GitHubUrl { get; set; }
 
     public string? YouTubeUrl { get; set; }
 
