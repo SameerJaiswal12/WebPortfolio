@@ -2,6 +2,29 @@
 
 A professional, production-ready game developer portfolio website built with **ASP.NET Core 8.0** and **Razor Pages**. Features a dark cinematic design with smooth animations, responsive layout, and modern web technologies.
 
+## Static Site Build for GitHub Pages
+
+This repo now contains a fully static build you can host on GitHub Pages without any server runtime.
+
+Static pages at repository root:
+- `index.html`, `about.html`, `projects.html`, `contact.html`, `bonus-content.html`
+- Project pages: `project-haunt-inn.html`, `project-clash-zone.html`, `project-claras-journey.html`, `project-crater-shooter.html`, `project-neon-ball.html`
+
+Assets reused from `wwwroot/`:
+- CSS: `wwwroot/css/site.css`
+- JS: `wwwroot/js/site.js`
+- Images and favicon: `wwwroot/images/...`, `wwwroot/favicon.png`
+
+If your Pages site is served under a subpath (e.g., `username.github.io/repo`), switch absolute `/wwwroot/...` references in the HTML to relative paths `wwwroot/...`.
+
+### Deploy to GitHub Pages
+1. Commit and push the root HTML files and the `wwwroot/` folder to your default branch (e.g., `main`).
+2. In GitHub → Settings → Pages:
+   - Source: Deploy from a branch
+   - Branch: your default branch, folder: `/ (root)`
+   - Save
+3. After it publishes, open the URL shown in Pages settings.
+
 ## 🎮 Features
 
 ### Design & UI
